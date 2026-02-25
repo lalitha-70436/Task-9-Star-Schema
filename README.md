@@ -1,2 +1,25 @@
-# Task-9-Star-Schema
-This project implements a Star Schema data model using SQL to organize retail sales data into fact and dimension tables for analytical reporting.
+# Task 9 – SQL Data Modeling: Star Schema
+
+## Description
+
+In this task, I designed and implemented a Star Schema data model for a retail sales dataset using Google Colab and SQLite. The objective was to understand how data warehouses are structured for business intelligence and analytical reporting.
+
+I first analyzed the dataset and identified the fact table and dimension tables required for a star schema. The **fact table (fact_sales)** stores transactional sales data, while the **dimension tables (dim_customer, dim_product, dim_date, and dim_region)** store descriptive information related to customers, products, dates, and regions.
+
+After creating the schema using SQL, I loaded cleaned data into each dimension table using distinct values and mapped them into the fact table using foreign keys. This helped maintain data consistency and reduced redundancy.
+
+Indexes were created on key columns to improve query performance. Analytical SQL queries were then executed to generate insights such as total sales by region and product categories. The query outputs were exported as CSV files for reporting purposes.
+
+Finally, a visual star schema diagram was created to represent the relationships between fact and dimension tables.
+
+## Tools Used
+
+* Google Colab
+* SQLite
+* Python (Pandas)
+* SQL
+* dbdiagram.io
+
+## Outcome
+
+This project helped me understand data warehouse modeling concepts such as star schema design, fact vs dimension tables, surrogate keys, indexing, and analytical querying used in real-world data analytics workflows.
